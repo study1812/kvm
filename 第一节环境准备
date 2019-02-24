@@ -1,3 +1,24 @@
+vmware 网络还原默认设置
+
+设置vmware 网络
+
+
+
+
+
+
+
+系统安装
+
+设置网卡名字为 eth 样式
+
+安装系统界面 tab 键 在 quit 后输入下面内容 按 Enter 键即可
+
+net.ifnames=0 biosdevname=0
+
+账号 root
+
+密码 123456
 
 sed -i 's/enforcing/disabled/g'  /etc/selinux/config
 setenforce 0
@@ -8,6 +29,30 @@ systemctl   restart sshd
 systemctl  disable firewalld
 systemctl   firewalld
 
-
 systemctl  disable NetworkManager
 systemctl  stop  firewalld  NetworkManager
+
+
+
+关机  clone  虚拟机  
+
+开机设置ip 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
